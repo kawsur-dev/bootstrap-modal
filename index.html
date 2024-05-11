@@ -1,4 +1,5 @@
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <!doctype html>
 <html lang="en">
@@ -11,7 +12,7 @@
   <meta name="csrf-token" content="S3D6Y4tCoVXcdFRoowgDILIS4s0qGQIipOjjlukC">
 
   <!-- <title>Anjuman-E-Shujae</title> -->
-  <title>IPhone Modal Test</title>
+  <title>Qardan Hasana</title>
 
 
   <!-- Fonts -->
@@ -25,9 +26,159 @@
 
 <body>
   <div id="app">
+    <main class="container-fluid">
+      <div class="row min-vh-100">
+        <div class="col-md-2 vh-md-100 overflow-auto px-0 shadow-sm">
+  <div class="d-flex flex-column flex-shrink-0 p-3 pe-3">
+    <a href="/" class="d-flex align-items-center justify-content-center pb-md-3 mb-md-3 link-body-emphasis text-decoration-none border-md-bottom">
+      Anjuman-E-Shujae
+    </a>
+    <ul class="nav nav-pills flex-column mb-auto offcanvas-md offcanvas-start" id="mobileMenu">
+      <li class="nav-item d-flex justify-content-between align-items-center">
+        <a href="https://stg-786-cnj.chicagonorthjamaat.org/dashboard" class="nav-link link-body-emphasis">
+          Dashboard
+        </a>
+        <button type="button" class="btn-close d-md-none me-3" data-bs-dismiss="offcanvas" data-bs-target="#mobileMenu" aria-label="Close"></button>
+      </li>
+            
+      
+      
+      
+      
+            <!-- <a href="https://stg-786-cnj.chicagonorthjamaat.org/wajebaat" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+      Wajebaat Booking
+              </a> -->
+            <li class="nav-item">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#wajebaat-collapse" aria-expanded="false">
+          Wajebaat Bookings
+        </button>
+        <div class="collapse" id="wajebaat-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <a href="https://stg-786-cnj.chicagonorthjamaat.org/wajebaat" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                View Wajebaat
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      
+      <!-- <li class="border-top my-3"></li>
+            <li class="nav-item">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                    Account
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+                        <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
+                        <li><a href="javascript:void(0)" class="link-body-emphasis d-inline-flex text-decoration-none rounded" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Sign out</a></li>
+                    </ul>
+                </div>
+            </li> -->
+    </ul>
+  </div>
+</div>
+<!-- <form id="logout-form" action="https://stg-786-cnj.chicagonorthjamaat.org/logout" method="POST" class="d-none">
+    <input type="hidden" name="_token" value="S3D6Y4tCoVXcdFRoowgDILIS4s0qGQIipOjjlukC" autocomplete="off"></form> -->        <div class="col-md-10 px-0 bg-subscriber min-vh-100 overflow-auto d-flex flex-column">
+          <nav class="navbar navbar-expand-lg shadow-sm px-5 navbar-light">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="--bs-navbar-toggler-icon-bg:url(https://stg-786-cnj.chicagonorthjamaat.org/assets/svg/three-dots.svg)"></span>
+      </button>
+    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-pills align-items-center gap-2 ms-auto mb-2 mb-lg-0">
+        <div class="nav-item">
+          <div class="nav-link border px-3 d-flex">
+            <img src="https://stg-786-cnj.chicagonorthjamaat.org/assets/svg/person.svg" class="me-3" role="image" alt="person">
+            <div>
+              Mir Kawsur |
+              Jamaat Member
+            </div>
+          </div>
+        </div>
+                <li class="nav-item">
+          <a href="https://stg-786-cnj.chicagonorthjamaat.org/accounts/715/passwords/edit" class="nav-link border px-3">
+            <i class="bi bi-gear"></i>
+          </a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link border px-3" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" href="javascript:void(0);">
+            <span class="">Logout</span>
+          </a>
+        </li>
+        <li class="nav-item position-relative">
+          <a href="https://stg-786-cnj.chicagonorthjamaat.org/notifications" class="stretched-link"></a>
+          <i class="bi bi-bell"></i>
+                              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="scale: 0.8;">
+            2
+            <span class="visually-hidden">unread messages</span>
+          </span>
+                  </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<form id="logout-form" action="https://stg-786-cnj.chicagonorthjamaat.org/logout" method="POST" class="d-none">
+    <input type="hidden" name="_token" value="S3D6Y4tCoVXcdFRoowgDILIS4s0qGQIipOjjlukC" autocomplete="off"></form>          <div class="px-3 px-md-5 pb-5 flex-grow-1">
+            <div class="my-4">
+              <div class="card border-0 shadow-sm">
+    <div class="card-body">
+        <div class="d-flex justify-content-between mb-3">
+            <h4>Qardan Hasana Applications</h4>
+            <!--                     <a href="https://stg-786-cnj.chicagonorthjamaat.org/qardan-hasana-applications/create" class="btn btn-golden">Apply For Qardan Hasana</a>
+
+                 -->
+            <div class="button-group d-flex flex-sm-row flex-column justify-content-between gap-2">
+                                <a href="https://stg-786-cnj.chicagonorthjamaat.org/qardan-hasana-applications/create" class="btn mb-2 btn-golden px-2">Apply</a>
+                </a>
+                                            </div>
+
+        </div>
+        <div class="table-responsive">
+            <table class="table caption-top datatable">
+                <thead class="text-center">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th style="width: 150px;" scope="col">ITS ID</th>
+                        <th style="width: 150px;" scope="col">Full Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Application Completed</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider text-center">
+                                        <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            12345678
+                        </td>
+                        <td>Mir</td>
+                        <td>
+                            asd, Dhaka, DHaka, Dhaka, 1231
+                        </td>
+                        <td><span class="badge rounded-pill text-bg-secondary">Draft</span></td>
+                        <td>11.11%</td>
+                        <td>
+                            <div class="btn-group btn-group-sm btn-bgs">
+            <a href="https://stg-786-cnj.chicagonorthjamaat.org/qardan-hasana-applications/33" data-bs-toggle="tooltip" title="view"
+           class="btn">
+            <i class="bi bi-eye"></i>
+        </a>
     
+            <a href="https://stg-786-cnj.chicagonorthjamaat.org/qardan-hasana-applications/33/edit" data-bs-toggle="tooltip" title="edit"
+           class="btn">
+            <i class="bi bi-pencil-fill"></i>
+        </a>
     
-        <button type="button" data-bs-toggle="modal" data-bs-target="#confirmationModal33"
+            <button type="button" data-bs-toggle="modal" data-bs-target="#confirmationModal33"
                 style="background-color: rgb(245, 172, 5)" title="delete" class="btn ml-2">
             <i class="bi bi-trash2"></i>
         </button>
@@ -35,7 +186,7 @@
         <!-- Confirmation Modal -->
 
         <div class="modal fade" id="confirmationModal33" tabindex="-1" role="dialog"
-             aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 80">
+             aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow: auto;">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -56,7 +207,24 @@
                 </div>
             </div>
         </div>
-   </div>
+    </div>
+                        </td>
+                    </tr>
+                                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      </div>
+  <script>
+    window.forms = {"placeholders":{"email":"someone@example.com","password":"************","first_name":"First Name","sur_name":"Surname"}}
+    window.user = {"id":715,"full_name":"Mir ","first_name":"Mir","middle_name":"Md","sur_name":"Kawsur","ITS_ID":"12345678","HOF_ID":"12345678","email":"mkawsur@itrtechsystems.com","email_verified_at":null,"two_factor_secret":null,"two_factor_recovery_codes":null,"two_factor_confirmed_at":null,"created_at":"2024-05-02T18:09:48.000000Z","updated_at":"2024-05-09T05:35:39.000000Z","account_status":1,"age":27,"gender":1,"mobile":"01518917616","marital_status":2,"nationality":"BD","address":"Dhaka","street":"Dhaka","area":"Dhaka","city":"DHaka","state":"Dhaka","pincode":"1231","sector":"11","vatan":"22","jamaat":"11","jamiaat":"123","qualification":"Masters","occupation":"Teacher","name":null,"roles":[{"id":4,"name":"Jamaat Member","guard_name":"web","created_at":"2023-09-04T19:23:31.000000Z","updated_at":"2023-10-10T18:28:15.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"role_id":4}}],"permissions":[{"id":129,"permission_category_id":20,"name":"view qardan hasana applications","guard_name":"web","created_at":"2023-11-06T20:24:39.000000Z","updated_at":"2023-11-06T20:24:39.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":129}},{"id":130,"permission_category_id":20,"name":"apply for qardan hasana","guard_name":"web","created_at":"2023-11-06T20:24:39.000000Z","updated_at":"2023-11-06T20:24:39.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":130}},{"id":131,"permission_category_id":21,"name":"view hussain scheme contributions","guard_name":"web","created_at":"2024-01-27T16:00:48.000000Z","updated_at":"2024-01-27T16:00:48.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":131}},{"id":132,"permission_category_id":21,"name":"contribute to hussain scheme","guard_name":"web","created_at":"2024-01-27T16:00:48.000000Z","updated_at":"2024-01-27T16:00:48.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":132}},{"id":133,"permission_category_id":22,"name":"view wajebaat booking","guard_name":"web","created_at":"2024-03-07T17:55:45.000000Z","updated_at":"2024-03-07T17:55:45.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":133}},{"id":134,"permission_category_id":22,"name":"view wajebaat bookings","guard_name":"web","created_at":"2024-03-07T17:55:45.000000Z","updated_at":"2024-03-07T17:55:45.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":134}},{"id":135,"permission_category_id":22,"name":"delete wajebaat booking","guard_name":"web","created_at":"2024-03-07T17:55:45.000000Z","updated_at":"2024-03-07T17:55:45.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":135}},{"id":136,"permission_category_id":21,"name":"view hussain scheme contribution","guard_name":"web","created_at":"2024-03-25T19:55:31.000000Z","updated_at":"2024-03-25T19:55:31.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":136}},{"id":137,"permission_category_id":21,"name":"delete hussain scheme contribution","guard_name":"web","created_at":"2024-03-25T19:55:31.000000Z","updated_at":"2024-03-25T19:55:31.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":137}},{"id":143,"permission_category_id":20,"name":"edit qardan hasana applications","guard_name":"web","created_at":"2024-04-29T19:57:30.000000Z","updated_at":"2024-04-29T19:57:30.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":143}},{"id":144,"permission_category_id":20,"name":"delete qardan hasana applications","guard_name":"web","created_at":"2024-04-29T19:57:30.000000Z","updated_at":"2024-04-29T19:57:30.000000Z","pivot":{"model_type":"App\\Models\\User","model_id":715,"permission_id":144}}]}
+  </script>
   </body>
 
 </html>
